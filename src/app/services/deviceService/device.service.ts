@@ -28,7 +28,7 @@ export class DeviceService {
        *  }
        */
     } catch (error) {
-      console.error('Error al obtener información del dispositivo:', error);
+      console.error('Error | informacionIdUnicoDispositivo -> ', error);
     }
   }
 
@@ -59,7 +59,7 @@ export class DeviceService {
        *  }
        */
     } catch (error) {
-      console.error('Error al obtener información del dispositivo:', error);
+      console.error('Error | informacionTipoDispositivo -> ', error);
     }
   }
 
@@ -83,7 +83,7 @@ export class DeviceService {
        * }
        */
     } catch (error) {
-      console.error('Error al obtener información del dispositivo:', error);
+      console.error('Error | informacionBateriaDispositivo -> ', error);
     }
   }
 
@@ -107,7 +107,7 @@ export class DeviceService {
        * 
        */
     } catch (error) {
-      console.error('Error al obtener información del dispositivo:', error);
+      console.error('Error | informacionBateriaDispositivo -> ', error);
     }
   }
 
@@ -122,15 +122,10 @@ export class DeviceService {
 
       const info = await Device.getLanguageTag();
       console.log(info);
-      /**
-       * Ejemplo del resultado de info:
-       * 
-       * {
-       *  value: 'es-ES'
-       * }
-       */
+     
+      
     } catch (error) {
-      console.error('Error al obtener información del dispositivo:', error);
+      console.error('Error | EtiquetaLocalIdiomaActualDispositivo -> ', error);
     }
   }
 

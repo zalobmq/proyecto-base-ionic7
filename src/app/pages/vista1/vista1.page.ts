@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DeviceService } from '../../services/deviceService/device.service';
+import { NetworkService } from '../../services/networkService/network.service';
 
 @Component({
   selector: 'app-vista1',
@@ -8,7 +9,7 @@ import { DeviceService } from '../../services/deviceService/device.service';
 })
 export class Vista1Page implements OnInit {
 
-  constructor( private deviceService:DeviceService) { }
+  constructor( private deviceService:DeviceService , private network:NetworkService) { }
 
   ngOnInit() {
 
@@ -17,6 +18,10 @@ export class Vista1Page implements OnInit {
     this.deviceService.CodigoLocalIdiomaActualDispositivo();
     this.deviceService.EtiquetaLocalIdiomaActualDispositivo();
     this.deviceService.informacionIdUnicoDispositivo();
+
+    //------
+
+    this.network.estadoDeConexion();
 
 
 
