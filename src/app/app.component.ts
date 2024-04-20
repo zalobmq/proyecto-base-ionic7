@@ -6,13 +6,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+    { title: 'Inicio',      url: 'inicio',      icon: 'home' },
+    { title: 'Vista 1',     url: 'vista1',      icon: 'text' },
+    { title: 'Vista 2',     url: 'vista2',      icon: 'text' },
+    { title: 'Vista 3',     url: 'vista3',      icon: 'text' },
+    { title: 'Ajustes',     url: 'ajustes',     icon: 'cog' },
+    { title: 'Información', url: 'informacion', icon: 'information-circle' },
+
+    
+    // Para crear una nueva pagina usar el comando -> ionic generate page {nombre de la pagina}
+    //-------------------------
+    // * AÑADIR NUEVO MENU
+    //-------------------------
+    //    TITULO MENU      NOMBRE DEL LA PAGINA    NOMBRE IONIC ICONS              
+    //{ title: 'xxxxxx',      url: 'xxxxxxx',      icon: 'xxxxxxxxx' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
 }
